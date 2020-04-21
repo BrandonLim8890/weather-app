@@ -41,7 +41,7 @@ export default {
     async getWeather() {
       try {
         const response = await fetch(
-          `http://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=${this.units}&appid=${this.key}`,
+          `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=${this.units}&appid=${this.key}`,
           { mode: 'cors' }
         );
         const weatherData = await response.json();
